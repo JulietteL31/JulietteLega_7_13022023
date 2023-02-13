@@ -1,0 +1,46 @@
+.logement {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 340px;
+    margin: 30px;
+}
+
+.img-logement {
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.title-logement {
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25.67px
+}
+
+.listeLogements {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.logementsContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1240px;
+    margin-top: 43px;
+    padding-top: 26px;
+    background: #F7F7F7;
+    border-radius: 25px;
+}

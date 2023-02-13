@@ -1,0 +1,44 @@
+.img-container-carousel {
+    position: relative;
+    height: 415px;
+    width: 90%;
+    border-radius: 25px;
+}
+
+.numero-img {
+    position: absolute;
+    bottom: 2%;
+    color: white;
+    left: 50%;
+}
+
+.fleche-droite {
+    position: absolute;
+    right: 23px;
+    top: 40%;
+    cursor: pointer;
+}
+
+.fleche-gauche {
+    position: absolute;
+    left: 23px;
+    top: 40%;
+    cursor: pointer;
+}
+
+.img-carousel {
+    object-fit: cover;
+    height: 415px;
+    width: 100%;
+    border-radius: 25px;
+}
+
+@media screen and (max-width:800px) {
+    .fleche-carousel {
+        width: 25px;
+        height: 42px;
+    }
+    .fleche-droite, .fleche-gauche {
+        top: 45%;
+    }
+}

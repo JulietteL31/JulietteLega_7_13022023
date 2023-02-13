@@ -1,0 +1,129 @@
+/* section */
+.fiche-logement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 25.37px;
+  }
+  
+  /*image*/
+  .img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .carousel {
+    height: 415px;
+    width: 1240px;
+    border-radius: 25px;
+    object-fit: cover;
+  }
+  
+  /*DESCRIPTION*/
+  
+  .description-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+  }
+  
+  
+  /*titre*/
+  .title-name {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 142.6%;
+  
+    color: #ff6060;
+    margin-bottom: 0;
+  }
+  
+  .title-direction {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+  
+    color: #ff6060;
+    margin-top: 0;
+  }
+  
+  /*host*/
+  .name-and-note {
+      flex-direction: column;
+      display: flex;
+      height: 100px;
+  }
+  
+  .host {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 70%;
+  }
+  
+  .host-name > p {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    text-align: right;
+  
+    color: #ff6060;
+  }
+  
+  .host-name {
+    display: flex;
+    width: 30%;
+  }
+  
+  .host-picture, .img-host {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+  }
+
+
+  @media screen and (max-width:900px) {
+    .description-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+    .name-and-note {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .title-and-tags {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width:736px) {
+    .title-name {
+      font-size: 18px;
+    }
+    .title-direction {
+      font-size: 14px;
+    }
+    .host-name > p {
+      font-size: 12px;
+    }
+    .host-picture, .img-host {
+      width: 32px;
+      height: 32px;
+    }
+  }

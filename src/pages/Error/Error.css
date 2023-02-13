@@ -1,0 +1,45 @@
+.error404-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 174.37px;
+  }
+  
+  .error404 {
+    width: 597px;
+    height: 263px;
+    margin-bottom: 66px;
+  }
+  
+  .error404-text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 142.6%;
+    /* or 51px */
+  
+    display: flex;
+    align-items: flex-end;
+  
+    color: #ff6060;
+  }
+  
+  .error404-link {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    /* identical to box height, or 26px */
+  
+    display: flex;
+    align-items: flex-end;
+    text-decoration-line: underline;
+  
+    color: #ff6060;
+  
+    margin-top: 182px;
+  }
+  

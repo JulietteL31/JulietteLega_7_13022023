@@ -1,0 +1,52 @@
+.dropdown-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-top: 33px;
+}
+
+.dropdown-title {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    column-gap: 800px;
+    align-items: center;
+    background-color: #FF6060;
+    border-radius: 5px;
+}
+
+.title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 142.6%;
+    color: white;
+}
+
+.dropdown-text {
+    display: flex;
+    justify-content: center;
+    background-color: #F7F7F7;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 142.6%;
+    color: #FF6060;
+    width: 95%;
+}
