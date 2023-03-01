@@ -42,4 +42,34 @@
   
     margin-top: 182px;
   }
+
+  @media screen and (max-width:920px) {
+    .error404 {
+      width: 450px;
+      height: 163px;
+    }
+    .error404-text {
+      font-size: 28px;
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width:736px) {
+    .error404 {
+      width: 250px;
+      height: 99px;
+    }
+    .error404-text {
+      font-size: 18px;
+    }
+    .error404-link {
+      font-size: 14px;
+    }
+  }
   
+  @media screen and (max-width:450px) {
+    .error404 {
+      width: 150px;
+      height: 53px;
+    }
+  }

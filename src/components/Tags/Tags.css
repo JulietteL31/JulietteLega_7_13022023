@@ -2,17 +2,19 @@
 .tags {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     column-gap: 10px;
   }
   
   .tag {
     background: #ff6060;
-    border-radius: 10px;
+    border-radius: 12px;
     height: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin-right: 10px; */
+    margin-bottom: 7px;
+    padding: 3px 30px 2px 30px;
   }
   
   .tag-text {
@@ -21,17 +23,16 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 142.6%;
-    /* identical to box height, or 20px */
-  
     text-align: center;
-  
     color: #ffffff;
-    margin: 3px;
-    padding: 5px;
   }
 
   @media screen and (max-width:736px) {
     .tag-text {
       font-size: 10px;
+    }
+    .tag {
+      width: 84px;
+      padding: 0 5px 0 5px;
     }
   }

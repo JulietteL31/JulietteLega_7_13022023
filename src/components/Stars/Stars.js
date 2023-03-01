@@ -14,12 +14,6 @@ function Stars({rate}) {
 					<div key={rangeElem.toString()}><img src={etoile} className='etoile' alt='etoile' /></div>
 				) : (<div key={rangeElem.toString()}><img src={etoileGrise} className='etoile' alt='etoile' /></div>)
 			)}
-
-            {/* <div><img src={etoile} className='etoile' alt='etoile' /></div>
-            <div><img src={etoile} className='etoile' alt='etoile' /></div>
-            <div><img src={etoile} className='etoile' alt='etoile' /></div>
-            <div><img src={etoile} className='etoile' alt='etoile' /></div>
-            <div><img src={etoile} className='etoile' alt='etoile' /></div> */}
         </div>
     )
 }

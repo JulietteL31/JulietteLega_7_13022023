@@ -1,11 +1,10 @@
 import flecheGauche from '../../assets/fleche-gauche.png'
 import flecheDroite from '../../assets/fleche-droite.png'
 import './Carousel.css'
-// import "react-image-gallery/styles/css/image-gallery.css"
 
 import { useState } from "react"
 
-// import ImageGallery from 'react-image-gallery'
+
 
 function Carousel({cover, pictures}) {
 
@@ -23,7 +22,11 @@ function Carousel({cover, pictures}) {
         setIndex(firstImage);
     }
 
-    
+    if(imgCount < 2) {
+        return <div className='img-container-carousel'>
+        <img src={pictures[index]} alt='description visuelle du logement' className='img-carousel'/>
+        </div>
+    }
     
         console.log(imgNumber)
 
@@ -37,7 +40,11 @@ function Carousel({cover, pictures}) {
                     <div className='fleche-gauche'><img src={flecheGauche} alt='fleche direction gauche' onClick={goToPrevious} className='fleche-carousel'/></div>
 
         </div>
+
+
     )
+
+    //cas 1 ou 0 image
 }
 
 export default Carousel

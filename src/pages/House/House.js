@@ -12,11 +12,8 @@ function House() {
             </div>
             <div className='logementsContent'>
                 <div className='listeLogements'>
-                    {listeLogements.map(({id, title, cover}) => 
-                        <Item 
-                        id={id} 
-                        title={title} 
-                        cover={cover}/>
+                    {listeLogements.map((l) => 
+                    <Item key={l.id} id={l.id} title={l.title} cover={l.cover} />
                     )}
                 </div>
             </div>

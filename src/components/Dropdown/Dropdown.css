@@ -1,52 +1,201 @@
+/*equipement*/
 .dropdown-container {
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-}
-
-.dropdown {
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 24px;
+  }
+  
+  .dropdown {
     display: flex;
     flex-direction: column;
-    width: 70%;
-    margin-top: 33px;
-}
+    width: 48%;
+  }
+  
+  .dropdown-titre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: #ff6060;
+    border-radius: 10px;
+    width: 100%;
+    z-index: 1000000;
+    cursor: pointer;
+    height: 50px;
+  }
 
-.dropdown-title {
+  .dropdown-title {
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-around;
-    column-gap: 800px;
     align-items: center;
     background-color: #FF6060;
     border-radius: 5px;
+    cursor: pointer;
+    height: 47px;
 }
 
-.title {
+.about-div-dropdown {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-top: 33px;
+  z-index: 0;
+}
+  
+  .title-about {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 142.6%;
     color: white;
-}
+    width: 87%;
+  }
+  
+  .title-drop {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    width: 80%;
+  }
 
-.dropdown-text {
+  .dropdown-text {
+    background: #f7f7f7;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -20px;
+    padding: 50px 12px 25px 20px;
+  }
+
+  .dropdown-text-about {
     display: flex;
     justify-content: center;
     background-color: #F7F7F7;
     border-radius: 5px;
     width: 100%;
+    padding: 10px 0 10px 0;
+}
+  
+  .dropdown-ul {
+    list-style-type: none;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 142.6%;
+    color: #ff6060;
+    width: 100%;
+    margin: 0;
+  }
+
+  .text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 142.6%;
+    color: #FF6060;
+    margin: 0;
 }
 
-.text {
-    font-family: 'Montserrat';
+.text-about {
+  font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 142.6%;
     color: #FF6060;
-    width: 95%;
+    margin: 0;
+    padding: 18px 15px 0 15px;
 }
+  
+  @media screen and (max-width:736px) {
+    .dropdown-container {
+      flex-direction: column;
+      margin-bottom: -20px;
+    }
+    .dropdown {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .dropdown-text {
+      justify-content: flex-start;
+      padding: 30px 6px 5px 10px;
+    }
+    .dropdown-text-about {
+      width: auto;
+      padding: 18px 6px 5px 10px;
+    }
+    .text, .text-about {
+      font-size: 12px;
+      padding: 0;
+    }
+    .dropdown-ul {
+      font-size: 12px;
+    }
+    .dropdown-titre {
+      height: 30px;
+      border-radius: 5px;
+    }
+    .title-drop, .title-about {
+      font-size: 13px;
+    }
+    .dropdown-fleche {
+      width: 17px;
+      height: 10px;
+    }
+    .dropdown-title {
+      height: 30px;
+    }
+    .about-div-dropdown {
+      margin-top: 20px;
+    }
+  }
+
+.rotation-fleche {
+  animation: rotationFleche 300ms forwards;
+  animation-play-state: paused;
+}
+
+.rotation {
+  animation: rotation 300ms forwards;
+  animation-play-state: paused;
+}
+
+  @keyframes rotationFleche {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-180deg);
+    }
+  }
+
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(180deg);
+    }
+  }
+
+  .effect-rotate-ferme:active > .rotation{
+    animation-play-state: running;
+  }
+
+  .effect-rotate-ouvre:active > .rotation-fleche{
+    animation-play-state: running;
+  }

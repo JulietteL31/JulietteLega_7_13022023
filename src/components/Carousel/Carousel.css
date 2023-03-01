@@ -33,12 +33,38 @@
     border-radius: 25px;
 }
 
-@media screen and (max-width:800px) {
+.invisible {
+    display: none;
+}
+
+@media screen and (max-width:1000px) {
     .fleche-carousel {
         width: 25px;
         height: 42px;
     }
     .fleche-droite, .fleche-gauche {
         top: 45%;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .numero-img {
+        display: none;
+    }
+    .fleche-carousel {
+        width: 11px;
+        height: 19px;
+    }
+    .fleche-droite {
+        right: 10px;
+    }
+    .fleche-gauche {
+        left: 10px;
+    }
+    .img-carousel {
+        height: 300px;
+    }
+    .img-container-carousel {
+        height: 300px;
     }
 }
