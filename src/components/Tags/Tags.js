@@ -1,8 +1,6 @@
-// import Logements from '../../data/logement_data.json'
 import './Tags.css'
 
 function Tag({tags}) {
-    console.log(tags)
     return(
         <div className='tags'>
             {tags.map((tag) =>

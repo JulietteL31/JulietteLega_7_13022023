@@ -2,7 +2,6 @@ import './Item.css'
 import { Link } from 'react-router-dom'
 
 function Item({id, title, cover}) {
-    console.log(id);
     return(
         <Link to={`/logement/${id}`} key={id} className='logement'>
             <h2 className='title-logement'>{title}</h2>
