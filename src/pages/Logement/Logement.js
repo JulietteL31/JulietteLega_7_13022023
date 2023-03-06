@@ -7,6 +7,8 @@ import listeLogements from '../../data/logement_data.json'
 import { useParams } from "react-router-dom"
 import {  useState, useEffect } from "react"
 import Error from '../Error/Error'
+import Header from '../../components/Header/Header'
+import Footer from '../../components/Footer/Footer'
 
 
 function Logement() {
@@ -33,6 +35,7 @@ function Logement() {
             if(house.id === id) {
                 setLogement(house)
             }
+            return null
         })
     }, [id]);
   
@@ -52,7 +55,8 @@ function Logement() {
 
 //Affichage infos page logement
     return (
-        <div>
+        <>
+        <Header linkAbout="noUnderline" linkHome="noUnderline"/>
         <section className='fiche-logement'>
             <Carousel cover={logement.cover} pictures={logement.pictures}/>
             <div className='description-container'>
@@ -76,7 +80,8 @@ function Logement() {
                         <DropdownHost title="Equipements" description={mapLogementEquipement} classeTitre="dropdown-titre" classeText="dropdown-text" classe="dropdown" fontTitre="title-drop"/>
                     </div>
                 </section>
-            </div>
+                <Footer />
+            </>
 
     )
 }

@@ -29,13 +29,43 @@
       column-gap: 20px;
   }
   
-  .nav-lien {
+  /* .nav-lien {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 142.6%;
-    /* or 34px */
+  
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+  
+    color: #ff6060;
+    text-decoration: none;
+  } */
+
+  .linkUnderline {
+    text-decoration: underline;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 142.6%;
+  
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+  
+    color: #ff6060;
+  }
+
+  .noUnderline {
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 142.6%;
   
     display: flex;
     align-items: flex-end;
@@ -65,7 +95,7 @@
         width: 168px;
         text-transform: uppercase;
     }
-    .nav-lien {
+    .linkUnderline, .noUnderline {
         font-size: 12px;
     }
     .kasa-logo {
