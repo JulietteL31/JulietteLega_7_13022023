@@ -9,7 +9,7 @@ const Router = () => {
         <BrowserRouter>
             <Routes>
                     <Route exact path="/" element={<House />} />
-                    <Route path="*" element={<Error404 />}/>
+                    <Route path="/*" element={<Error404 />}/>
                     <Route exact path="/logement/:id" element={<Logement />}/>
                     <Route exact path="/apropos" element={<About />} />
             </Routes>
